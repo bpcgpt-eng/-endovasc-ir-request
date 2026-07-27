@@ -1,27 +1,24 @@
-# EndoVasc Bridge IR Request Web App — Version 4
+# EndoVasc Bridge IR Request Website — Version 5
 
-## Main correction
+## Branding added
 
-The iPhone Files/WhatsApp document preview does not reliably execute JavaScript. Therefore, interactive controls such as readiness checking, referral generation, WhatsApp sharing, and file sharing may appear but do nothing.
+- EndoVasc Bridge logo displayed in the website header
+- Dr. Firas Salhi
+- Interventional & Neurointerventional Radiologist
+- “Requested procedure” renamed to “Interventional Radiology Request Type”
+- Doctor identity included in the generated referral and print output
+- WBC and CRP remain separate fields
 
-Version 4 is prepared to be published as a real HTTPS website. Open the published link in Safari.
+## Update the existing GitHub Pages site
 
-## Laboratory update
+In the repository `bpcgpt-eng/-endovasc-ir-request`:
 
-WBC and CRP are now separate fields and appear separately in the generated referral.
+1. Upload and replace `index.html`.
+2. Upload and replace `404.html`.
+3. Upload `endovasc-bridge-logo.png`.
+4. Keep `.nojekyll`.
+5. Commit the changes.
+6. Wait for GitHub Pages to redeploy.
+7. Refresh the live website.
 
-## GitHub Pages deployment
-
-1. Create a GitHub repository.
-2. Upload all files from this folder to the repository root.
-3. Open repository **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and `/ (root)`.
-6. Save.
-7. GitHub will generate an HTTPS website link.
-8. Send that website link to referring doctors.
-9. They open the link in Safari, complete the form, and use **Send by WhatsApp**.
-
-## Important
-
-This remains a front-end prototype. Do not use real patient-identifying information until the hospital approves the privacy, cybersecurity, authentication, data retention, and communication workflow.
+Use fictional patient information for testing until the hospital approves the privacy and security workflow.
